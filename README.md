@@ -1,3 +1,3 @@
 # ExplorePlanets
 
-## Here is an app I made for my Mobile Application Development course
+Here is an app I made for my Mobile Application Development course
