@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.planets.databinding.ActivityMainBinding
 
 
-lateinit var binding: ActivityMainBinding
+//lateinit var binding: ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
