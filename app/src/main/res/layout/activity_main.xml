@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/planetSpinner"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="641dp"
+        android:contentDescription="@string/EarthString"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/planetImage"
+        android:layout_width="319dp"
+        android:layout_height="279dp"
+        android:contentDescription="@string/EarthString"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/planetSpinner"
+        app:layout_constraintStart_toStartOf="@+id/planetSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/planetSpinner"
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/planetDescription"
+        android:layout_width="190dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="96dp"
+        android:text="@string/EarthText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="179dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/MainButtonText"
+        app:layout_constraintEnd_toEndOf="@+id/planetImage"
+        app:layout_constraintStart_toStartOf="@+id/planetImage"
+        app:layout_constraintTop_toBottomOf="@+id/planetDescription" />
+
+    <RadioGroup
+        android:id="@+id/planetRadioGroup"
+        android:layout_width="108dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/planetDescription"
+        app:layout_constraintTop_toBottomOf="@+id/planetImage">
+
+        <RadioButton
+            android:id="@+id/EarthRadioButton"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="@string/EarthString" />
+
+        <RadioButton
+            android:id="@+id/MarsRadioButton"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="@string/MarsString" />
+
+        <RadioButton
+            android:id="@+id/PlutoRadioButton"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="@string/PlutoString" />
+
+        <RadioButton
+            android:id="@+id/VenusRadioButton"
+            android:layout_width="110dp"
+            android:layout_height="48dp"
+            android:text="@string/VenusString" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
