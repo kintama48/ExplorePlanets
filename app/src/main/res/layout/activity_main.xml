@@ -8,62 +8,72 @@
 
     <Spinner
         android:id="@+id/planetSpinner"
-        android:layout_width="313dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="641dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
         android:contentDescription="@string/EarthString"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/planetImage"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.48"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <ImageView
         android:id="@+id/planetImage"
-        android:layout_width="319dp"
-        android:layout_height="279dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:adjustViewBounds="true"
         android:contentDescription="@string/EarthString"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/planetSpinner"
-        app:layout_constraintStart_toStartOf="@+id/planetSpinner"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toTopOf="@+id/planetRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/planetSpinner"
-        app:layout_constraintVertical_bias="0.124"
+        app:layout_constraintWidth_percent="0.75"
         app:srcCompat="@drawable/ic_launcher_foreground"
         tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/planetDescription"
-        android:layout_width="190dp"
-        android:layout_height="195dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginBottom="96dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
         android:text="@string/EarthText"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:visibility="visible"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/planetImage"
+        app:layout_constraintTop_toBottomOf="@+id/planetImage"
+        app:layout_constraintWidth_percent="0.41" />
 
     <Button
         android:id="@+id/clearButton"
-        android:layout_width="179dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="34dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
         android:text="@string/MainButtonText"
-        app:layout_constraintEnd_toEndOf="@+id/planetImage"
-        app:layout_constraintStart_toStartOf="@+id/planetImage"
+        android:textColor="#000000"
+        app:layout_constraintHeight_percent="0.055"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintEnd_toEndOf="@+id/planetRadioGroup"
+        app:layout_constraintStart_toStartOf="@+id/planetDescription"
         app:layout_constraintTop_toBottomOf="@+id/planetDescription" />
 
     <RadioGroup
         android:id="@+id/planetRadioGroup"
-        android:layout_width="108dp"
-        android:layout_height="194dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@+id/planetDescription"
-        app:layout_constraintTop_toBottomOf="@+id/planetImage">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/planetImage"
+        app:layout_constraintHeight_percent="0.216"
+        app:layout_constraintTop_toBottomOf="@+id/planetImage"
+        app:layout_constraintWidth_percent="0.269">
 
         <RadioButton
             android:id="@+id/EarthRadioButton"

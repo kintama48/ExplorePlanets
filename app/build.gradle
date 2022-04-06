@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+
 android {
     compileSdk 32
 
@@ -33,6 +34,10 @@ android {
     viewBinding {
         enabled = true
     }
+
+//    aaptOptions {
+//        cruncherEnabled = false
+//    }
 }
 
 dependencies {
