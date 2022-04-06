@@ -51,6 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif-condensed"
         android:text="@string/EarthText"
         android:textColor="?android:textColorPrimary"
         android:visibility="visible"
@@ -87,24 +88,28 @@
             android:layout_width="110dp"
             android:layout_height="48dp"
             android:checked="true"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/EarthString" />
 
         <RadioButton
             android:id="@+id/MarsRadioButton"
             android:layout_width="110dp"
             android:layout_height="48dp"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/MarsString" />
 
         <RadioButton
             android:id="@+id/PlutoRadioButton"
             android:layout_width="110dp"
             android:layout_height="48dp"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/PlutoString" />
 
         <RadioButton
             android:id="@+id/VenusRadioButton"
             android:layout_width="110dp"
             android:layout_height="48dp"
+            android:fontFamily="sans-serif-condensed"
             android:text="@string/VenusString" />
     </RadioGroup>
 
