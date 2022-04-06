@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Planets</string>
+    <string name="app_name">Explore Planets</string>
     <string name="EarthText">Earth is the third planet from the Sun and the only astronomical object known to harbor life. While large amounts of water can be found throughout the Solar System, only Earth sustains liquid surface water.</string>
     <string name="VenusText">Venus is the second planet from the Sun. It is named after the Roman goddess of love and beauty. As the brightest natural object in Earth\'s night sky after the Moon, Venus can cast shadows and can be visible to the naked eye in broad daylight.</string>
     <string name="PlutoText">Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond the orbit of Neptune. It was the first object to be discovered in the Kuiper belt, and remains the largest known body in that area.</string>

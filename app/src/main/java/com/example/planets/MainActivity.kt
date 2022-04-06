@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view: View = binding.root
-        setContentView(R.layout.activity_main)
 
         binding.planetRadioGroup.setOnCheckedChangeListener{ _, _ -> updateView("radioGroup")}
 
@@ -33,18 +32,19 @@ class MainActivity : AppCompatActivity() {
             selectEarth()
         }
 
-        val spinner: Spinner = binding.planetSpinner
-        // Create an ArrayAdapter using the string array and a default spinner layout
-        ArrayAdapter.createFromResource(
-            this,
-            R.array.PlanetsArray,
-            android.R.layout.simple_spinner_item
-        ).also { adapter ->
-            // Specify the layout to use when the list of choices appears
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-            // Apply the adapter to the spinner
-            spinner.adapter = adapter
-        }
+//        val spinner: Spinner = binding.planetSpinner
+//        // Create an ArrayAdapter using the string array and a default spinner layout
+//        ArrayAdapter.createFromResource(
+//            this,
+//            R.array.PlanetsArray,
+//            android.R.layout.simple_spinner_item
+//        ).also { adapter ->
+//            // Specify the layout to use when the list of choices appears
+//            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+//            // Apply the adapter to the spinner
+//            spinner.adapter = adapter
+//        }
+        setContentView(R.layout.activity_main)
     }
 
     private fun updateView(type: String){
